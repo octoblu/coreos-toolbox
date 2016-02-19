@@ -1,7 +1,7 @@
 FROM ubuntu-debootstrap:15.04
 MAINTAINER https://github.com/royvandewater
 
-RUN apt-get update && apt-get install -y git vim htop psmisc curl build-essential
+RUN apt-get update && apt-get install -y git vim htop psmisc curl build-essential linux-image-virtual linux-image-extra-virtual
 RUN curl -sSL https://get.docker.com/ | sh
 
 
